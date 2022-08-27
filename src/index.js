@@ -1,11 +1,11 @@
-// import React from "react";
-// import ReactDOM from "react-dom/client";
+import { createStore } from "redux";
 
-// import App from "./App";
+const add = document.querySelector("#add");
+const minus = document.querySelector("#minus");
+const number = document.querySelector("span");
 
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
+const reducer = () => {
+  return "hello";
+};
+
+const store = createStore(reducer);
