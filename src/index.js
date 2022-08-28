@@ -4,8 +4,10 @@ const add = document.querySelector("#add");
 const minus = document.querySelector("#minus");
 const number = document.querySelector("span");
 
-const reducer = () => {
-  return "hello";
+const countModifier = (count = 0, action) => {
+  console.log(count, action);
+  return count;
 };
 
-const store = createStore(reducer);
+const countStore = createStore(countModifier);
+console.log(countStore.getState());
